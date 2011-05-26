@@ -489,6 +489,8 @@ const CGFloat ktkDefaultToolbarHeight = 44;
    // view will be pushed until the navigation bar.
    UINavigationBar *navbar = [[self navigationController] navigationBar];
    [navbar setAlpha:alpha];
+   
+   [[self navigationController] setNavigationBarHidden:hide animated:NO];
 
    [toolbar_ setAlpha:alpha];
 
